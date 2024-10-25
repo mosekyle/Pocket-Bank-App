@@ -27,7 +27,6 @@ void main() async {
   
   // Ensure binding is initialized
   WidgetsFlutterBinding.ensureInitialized();
-
   // Initialize Firebase
   await Firebase.initializeApp(
       options: const FirebaseOptions(
