@@ -1,4 +1,29 @@
 {
-  "indexes": [],
-  "fieldOverrides": []
+  // Array to define Firestore indexes for complex queries
+  "indexes": [
+    // Add your index definitions here, for example:
+    // {
+    //   "collectionGroup": "yourCollectionName",
+    //   "queryScope": "COLLECTION",
+    //   "fields": [
+    //     { "fieldPath": "fieldName1", "order": "ASCENDING" },
+    //     { "fieldPath": "fieldName2", "order": "DESCENDING" },
+    //     { "fieldPath": "fieldName3", "arrayConfig": "CONTAINS" }
+    //   ]
+    // }
+  ],
+
+  // Array to define field-level configurations such as excluding fields from indexing
+  "fieldOverrides": [
+    // Add your field overrides here, for example:
+    // {
+    //   "collectionGroup": "yourCollectionName",
+    //   "fieldPath": "yourFieldName",
+    //   "indexes": [
+    //     { "order": "ASCENDING", "queryScope": "COLLECTION" },
+    //     { "arrayConfig": "CONTAINS", "queryScope": "COLLECTION_GROUP" }
+    //   ]
+    // }
+  ]
 }
+
