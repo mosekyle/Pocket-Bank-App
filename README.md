@@ -1,5 +1,4 @@
 # pocket_banking
-
 A new Flutter project.
 
 ## Getting Started
