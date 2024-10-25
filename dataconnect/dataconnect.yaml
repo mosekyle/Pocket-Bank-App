@@ -8,5 +8,6 @@ schema:
       database: "fdcdb"
       cloudSql:
         instanceId: "PocketBank-fdc"
+        
       # schemaValidation: "COMPATIBLE"
 connectorDirs: ["./connector"]
