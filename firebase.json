@@ -1,18 +1,25 @@
 {
+  // Firestore configuration
   "firestore": {
+    // Path to Firestore security rules
     "rules": "firestore.rules",
+    // Path to Firestore index configurations
     "indexes": "firestore.indexes.json"
   },
+  // Cloud Functions configuration
   "functions": [
     {
+      // Directory containing Cloud Functions source code
       "source": "functions",
+      // Label to identify this codebase, allowing multiple deployments
       "codebase": "default",
+      // Ignore unnecessary files and folders to improve deployment efficiency
       "ignore": [
-        "venv",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
+        "venv",                      // Python virtual environment
+        ".git",                      // Git version control directory
+        "firebase-debug.log",        // Firebase debug log file
+        "firebase-debug.*.log",      // Firebase debug log files with any extension
+        "*.local"                    // Local environment-specific files
       ]
     }
   ]
